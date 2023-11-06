@@ -27,7 +27,7 @@ function cgdown() {
       continue
     fi
 
-    cg down "$3/$source_path" -t $model_dir
+    cgdown "$3/$source_path" -t $model_dir
     mkdir -p $(dirname $target_path)
 
     mv "$model_dir/$3/$source_path" $target_path
